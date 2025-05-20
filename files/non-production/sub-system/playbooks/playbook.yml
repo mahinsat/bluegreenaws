@@ -1,0 +1,12 @@
+- name: Convert dist to dist.tar.gz
+  hosts: localhost
+  connection: local
+
+  tasks:
+    - name: Compress Directory contents
+      become: yes
+      archive:
+        path: /home/dist
+        dest: /home/dist-mahinsa-5.tar.gz
+        format: gz
+      tags: tar.gz
