@@ -48,11 +48,11 @@ metadata:
   annotations:
     alb.ingress.kubernetes.io/scheme: internal
     alb.ingress.kubernetes.io/group.order: '1'
-    alb.ingress.kubernetes.io/group.name: myapp-v2
+    alb.ingress.kubernetes.io/group.name: game-v2
 spec:
   ingressClassName: alb
   rules:
-    - host: myapp.internal.tech
+    - host: game.internal.tech
       http:
         paths:
         - path: /
